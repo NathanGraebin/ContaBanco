@@ -13,6 +13,7 @@ public class JAVAPROJETO {
 
     public static void main(String[] args) {
         Scanner Ler = new Scanner(System.in);
+        
         String nome;
         int senha;
         int idConta = 0;
@@ -20,7 +21,7 @@ public class JAVAPROJETO {
          CADASTRO[] listaContas = new CADASTRO[10];
          
           for (int i = 0; i < listaContas.length; i++) {
-            listaContas[i] = new CADASTRO("", 0, 0);
+          listaContas[i] = new CADASTRO("", 0, 0);
         }
          
         // INFORMAÇÕES QUE SERÃO CADASTRADAS //
@@ -96,7 +97,7 @@ public class JAVAPROJETO {
        for (int i = 0; i < listaContas.length; i++) {
    
             
-        listaContas[i].buscarContaLogin(idConta);
+       // minhaConta.buscarContaLogin(idConta);
         
         }
         break;
@@ -104,4 +105,4 @@ public class JAVAPROJETO {
                 }
     }
     }
-}
+ }
