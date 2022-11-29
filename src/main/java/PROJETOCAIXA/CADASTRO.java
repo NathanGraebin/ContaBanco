@@ -11,10 +11,10 @@ import java.util.Scanner;
  * @author User
  */
 public class CADASTRO {
-    Scanner Ler = new Scanner(System.in);
-    private String nome;
-    private int idConta;
-    private int senha;
+Scanner Ler = new Scanner(System.in);
+private String nome;
+private int idConta;
+private int senha;
 
     
     
@@ -88,16 +88,14 @@ public class CADASTRO {
     }
     
     
-    
-    
-    
     // INICIAR
     public void iniciar(){
         int opcao = -1;
         Scanner Ler = new Scanner(System.in);
         
         do {
-            Menu();//chamada do metodo 
+            Menu();
+            
             opcao = Ler.nextInt();
             escolherOpcao(opcao);//wchamada do metodo
         } while (opcao != 0);
@@ -109,7 +107,7 @@ public class CADASTRO {
         System.out.println("[1] - DEPOSITO");
         System.out.println("[2] - EXTRATO");
         System.out.println("[3] - DEBITAR");
-        System.out.println("[4] - EM MANUTENÇÃO");
+        System.out.println("[4] - EM MANUTENÇÃO - ");
         System.out.println("[5] - EM MANUTENÇÃO");
         System.out.println("[6] - VERIFICAR INFORMAÇÕES DO CADASTRO");
         System.out.println("[0] - DESLOGAR");
@@ -243,19 +241,7 @@ public class CADASTRO {
             
             
             //-----------------------------------------------------------------\\  
-            
-            
-            //INICIAR          XXXXXX            //
-                case 10:
-                System.out.println("DESLOGAR");        
-                
-                
-                
-                break;
-            //FIM          XXXXXX            //
-            
-            
-            //-----------------------------------------------------------------\\
+        
             }
 }
         
@@ -323,6 +309,8 @@ public class CADASTRO {
         
         
         }
+        
+        
        
         }
 
