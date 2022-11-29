@@ -11,6 +11,7 @@ import java.util.Scanner;
  * @author User
  */
 public class CADASTRO {
+    Scanner Ler = new Scanner(System.in);
     private String nome;
     private int idConta;
     private int senha;
@@ -77,6 +78,18 @@ public class CADASTRO {
     }
     
     
+    public void armazenaPessoa(String nome, int idConta, int senha ){
+    this.nome = nome;
+    this.idConta = idConta;
+    this.senha = senha;
+    System.out.println("#############################");
+    System.out.println("### CADASTRADO COM SUCESSO###");
+    System.out.println("#############################");
+    }
+    
+    
+    
+    
     
     // INICIAR
     public void iniciar(){
@@ -96,10 +109,10 @@ public class CADASTRO {
         System.out.println("[1] - DEPOSITO");
         System.out.println("[2] - EXTRATO");
         System.out.println("[3] - DEBITAR");
-        System.out.println("[4] - D");
-        System.out.println("[5] - D");
+        System.out.println("[4] - EM MANUTENÇÃO");
+        System.out.println("[5] - EM MANUTENÇÃO");
         System.out.println("[6] - VERIFICAR INFORMAÇÕES DO CADASTRO");
-        
+        System.out.println("[0] - DESLOGAR");
     }
      
         public void escolherOpcao(int opcao){
@@ -230,6 +243,19 @@ public class CADASTRO {
             
             
             //-----------------------------------------------------------------\\  
+            
+            
+            //INICIAR          XXXXXX            //
+                case 10:
+                System.out.println("DESLOGAR");        
+                
+                
+                
+                break;
+            //FIM          XXXXXX            //
+            
+            
+            //-----------------------------------------------------------------\\
             }
 }
         
@@ -264,14 +290,42 @@ public class CADASTRO {
             System.out.println("############################");
             System.out.println("DADOS CADASTRADOS");
             System.out.println("Nome : " + this.nome);
-            System.out.println("Nome : " + this.idConta); 
-            System.out.println("Nome : " + this.senha);
+            System.out.println("Numero da Conta : " + this.idConta); 
+            System.out.println("Senha : " + this.senha);
             System.out.println("############################");
             System.out.println("FIM DA CONSULTA DE CADASTRO");
             System.out.println("############################");
             
         }
+        
+        public void buscarContaLogin(int conta){
+        if(this.idConta == conta){
+        System.out.println("############################");
+        System.out.println("A CONTA FOI ENCONTRADA");
+        System.out.println("Nome :" + this.nome );
+        System.out.println("Saldo :" + this.saldoTotal );
+        
+        System.out.println("############################");
+        System.out.println("DIGITE SUA SENHA");
+        int senha;
+        senha = Ler.nextInt();
+        
+        if(this.senha == senha){
+        System.out.println("############################");
+        System.out.println("LOGIN EFETUADO");
+        iniciar();
+        }
+        else{
+        System.out.println("SENHA INVALIDA - OPERAÇÃO CANCELADA - TENTE NOVAMENTE");
+        }
+        
+        }
+        
+        
+        }
+       
+        }
 
 
 
-}
+
