@@ -1,13 +1,12 @@
-# Caixa-ELetronico
+# Conta do Banco
 
-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
+Esse foi um trabalho apresentado na faculdade.
 
-28/11 - Inicio do projeto de criação de um Sistema de Cadastro utilizando Vetor. 
 
-Já é possivel:
+![img](https://uploaddeimagens.com.br/images/004/324/640/full/f1.PNG?1675280537)
+#
 
-Executar  o menu inicial :
-
+#MENU INICIAL
 [1] - CRIAR CONTA
 [2] - JA TENHO CONTA
 
