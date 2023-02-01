@@ -1,6 +1,10 @@
 # Conta do Banco
 
-Esse foi um trabalho apresentado na faculdade focado em OOP ( Object Oriented Programming )
+Esse foi um trabalho apresentado na faculdade focado em OOP ( Object Oriented Programming ).
+
+Então todo conteudo aqui apresentado é para fins didaticos, podendo conter algumas linhas que apresentam informações adicionais afim de entender e garantir que os valores estão corretos e que a função esta funcionando
+
+
 
 Cadastro e verificação das informações da conta ( incluindo ID da conta gerado aleatoriamente com a função Random do pacote do Java )
 
