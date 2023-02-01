@@ -1,6 +1,6 @@
 # Conta do Banco
 
-Esse foi um trabalho apresentado na faculdade focado em OOP ( Object Oriented Programming ).
+Esse foi um trabalho apresentado na faculdade focado em OOP ( Object Oriented Programming ) com JAVA.
 
 Então todo conteudo aqui apresentado é para fins didaticos, podendo conter algumas linhas que apresentam informações adicionais afim de entender e garantir que os valores estão corretos e que a função esta funcionando
 
